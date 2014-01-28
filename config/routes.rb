@@ -3,5 +3,6 @@ Shouter::Application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resource :dashboard, only: [:show]
   resources :users, only: [:new, :show, :create]
-  resources :shouts, only: [:create, :show]
+  resources :shouts, only: [:show]
+  resources :text_shouts, only: [:create]
 end
