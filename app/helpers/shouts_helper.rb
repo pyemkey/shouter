@@ -6,7 +6,7 @@ module ShoutsHelper
 		image_tag("http://gravatar.com/avatar/#{digest}?s=#{size}")
 	end
 
-	def shouterize text
+def shouterize text
 		link_hashtags(strip_tags(text)).html_safe
 	end
 
